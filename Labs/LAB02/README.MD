@@ -1,5 +1,5 @@
-## Exercise 2: Setup Alerts (Analytics) and Respond to Incident in Azure Sentinel
-In this section we will configure Alerts in Azure Sentinel to generate Incidents for our security team.  During the review of these Incident we will build a Playbook to simplify the handling of these alerts.<br>
+## Exercise 2: View Livestream, Setup Alerts (Analytics) and Respond to Incident in Azure Sentinel
+In this section we will view events occuring live and then configure Alerts in Azure Sentinel to generate Incidents for our security team.  During the review of these Incident we will build a Playbook to simplify the handling of these alerts.<br>
 
 ## Task 1: Log on to the My Apps portal as a **Standard User**<br>
 
@@ -43,6 +43,7 @@ Password: **Ask the trainer**
 
 >
 ## Task 3: Create Hunting Rule for Failed Logon and add to Livestream<br>
+In this task we create a new hunting rule, add this to the live stream results to review failed logons occuring live. 
 
 
 1. Click **+ New Query**<br>
@@ -54,8 +55,7 @@ Password: **Ask the trainer**
 
 ## Important!!!! **(INSIDE THE QUERY substitute “XX” with your assigned number)**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/examplequery.png
-)<br><br>
+![alt text](/Labs/LAB02/screenshots/huntquery.png?raw=true")<br><br>
 
 ```powershell
 SigninLogs
@@ -65,30 +65,48 @@ SigninLogs
 | sort by TimeGenerated desc
 ```
 
-5. Under Entity Mapping, map the following entities
+1. Under Entity Mapping, map the following entities
 
-* Account -> UserprincipalName (Click **Add**)
-* IP address -> IPAddress (Click **Add**)
+   * Account -> UserprincipalName (Click **Add**)
+   * IP address -> IPAddress (Click **Add**)
 
 6. At the bottom, click **Create**
-7. In Queries, search for the queryyou have just saved. **standardXX – Failed Logon** (where “XX” is the number you have been assigned at the start of class)<br>
+7. In Queries, search for the query you have just saved. **standardXX – Failed Logon** (where “XX” is the number you have been assigned at the start of class)<br>
 8. Select the **Run Query** button in the bottom right of the screen and confirm if we have results returned.
-9. Select the Ellipsis button as the end of the query and select **Add to livestream**
-10. 
-![alt text]
-11. 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/examplequery.png
-)<br><br>
+9. Select the ellipsis button as the end of the query and select **Add to livestream**
 
-10. Set the Alert Threshold to ‘Generate alert when number of query results’ to **Is greater than** and the threshold to **0**
-11. “Under Event grouping, leave it as **"Group all events into a single alert"**
-12. Under Suppression, Set Stop running query after alert is generated after alert is generated to **On** and Stop running query for: **30 minutes**
-13. At the bottom, click Next: **Incident settings**.
+![alt text](/Labs/LAB02/screenshots/addlivetream.png?raw=true")<br>
 
-14. On Create incidents from alerts triggered by this analytics rule, set to **Enabled**.
-15. Under Group related alert, triggered by this analytics rule, into incidents, set to **Enabled**.
-16. Set Limit the group to alerts created within the selected time frame to **24 Hours**.
-17. Under Group alerts triggered by this analytics rule into a single incident by, select the radio button for **Grouping alerts into a single incident if the selected entities match** and from the drop-down menu, select **Account.**
+
+10. In the Livestream tab search for your query (**standardXX – Failed Logon** (where “XX” is the number you have been assigned at the start of class) and confirm your query in running and select  **open livestream** in the bottom right corner
+11. In the window confirm the Livestream is still running and leave browser open 
+12. In a new browser navigate back to https://myapps.microsoft.com
+12.	When logging on as **standardxx@sentinellab.xyz** type in an **incorrect password**
+13.	Repeat this invalid logon attempt **5 times**
+14. Return to the browser where Livestream is running and confirm we see results returned (this can take a few minutes).  
+
+## Task 4 Create Analytics Rule for Failed Logons<br>
+
+1. In the Livestream browser windows already open click **Create anaytics rule**
+
+![alt text](/Labs/LAB02/screenshots/livestreamanalytics.png?raw=true!)<br>
+
+2. Leave the name as it was created and Description as blank
+3. In Tactics select **Initial Access**
+4. Set the Severity as **Medium** and Status to **Enabled**
+5. Click **Next:Set Rule logic**
+6. Leave the Rule query and the Map entities as they have already been set
+7. In Query scheduling set **Run Query every** to **5 minutes** and Lookup date from the last to **30 minutes**
+8. In Alert Threshold set Generate alert when number of query results **is greater than** to **0** 
+
+9.  “Under Event grouping, leave it as **"Group all events into a single alert"**
+10. Under Suppression, Set Stop running query after alert is generated after alert is generated to **On** and Stop running query for: **30 minutes**
+11. At the bottom, click Next: **Incident settings**.
+
+12. On Create incidents from alerts triggered by this analytics rule, set to **Enabled**.
+13. Under Group related alert, triggered by this analytics rule, into incidents, set to **Enabled**.
+14. Set Limit the group to alerts created within the selected time frame to **24 Hours**.
+15. Under Group alerts triggered by this analytics rule into a single incident by, select the radio button for **Grouping alerts into a single incident if the selected entities match** and from the drop-down menu, select **Account.**
 
 ![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/Incidentsettings.png
 )<br><br>
@@ -100,16 +118,20 @@ SigninLogs
 
 
 
-## Task 4: Create Analytics Rule for Admin Group Change
+## Task 5: Create Analytics Rule for Admin Group Change
 
-1.	Click **Create** and choose **Scheduled query rule** from the flyout menu<br>
-In the Name box **type AdminXX – Admin Group Change** (where “XX” is the number you have been assigned at the start of class)
-2.	Leave **Description** blank
-3.	For Tactics, choose **Persistence** and **Privilege Escalation**
-4.	Select Alert Severity **Medium**
-5.	Set Staut to **Enabled.**
-6.	At the bottom, click **Next: Set rule logic.**
-7.	In Rule query copy the following query
+1. Navigate back to the main Sentinel home screen and in the navigation bar select **Analytics** 
+   
+![alttext](/Labs/LAB02/screenshots/analytics.png?raw=true")<br><br>
+
+2.	Click **Create** and choose **Scheduled query rule** from the flyout menu (note the different options available)<br>
+3.In the Name box **type AdminXX – Admin Group Change** (where “XX” is the number you have been assigned at the start of class)
+4.	Leave **Description** blank
+5.	For Tactics, choose **Persistence** and **Privilege Escalation**
+6.	Select Alert Severity **Medium**
+6.	Set Staut to **Enabled.**
+7.	At the bottom, click **Next: Set rule logic.**
+8.	In Rule query copy the following query
 
 ```powershell
 let accttypes = dynamic(['Domain Admins', 'Enterprise Admins', 'Schema Admins', 'Administrators' , 'Account Operators' , 'Backup Operators' , 'Print Operators' , 'Server Operators' , 'Domain Controllers' , 'Read-only Domain Controllers' , 'Group Policy Creator Owners' , 'Cryptographic Operators']);
@@ -128,7 +150,7 @@ o	Host -> ImpactedGroup (Click **Add**)<br>
 9.	Set the Run query every to **30 minutes**
 10.	Set the Lookup data from the last to **1 hour**
 11.	Set the Alert Threshold to Generate alert when number of query results to **Is greater than** and the threshold to **0**
-12. Under Event grouping, leave it as **“Group all events into a single alert"**
+1.  Under Event grouping, leave it as **“Group all events into a single alert"**
 13.	Set Stop running query after alert is generated to **On** and Stop running query for: **8 hours**
 14.	At the bottom, click **Next: Incident settings.**
 15.	On Create incidents from alerts triggered by this analytics rule, set to **Enabled.**
@@ -175,7 +197,7 @@ In this playbook we will be adding a user into a group based on a Incidents.  Th
 3.	Under Resource Group, Select **OI-Default-East-US**
 4.	In the Logic App Name field, type standard**XX**-Block-With-Conditional-Access-Policy (where “XX” is the number you have been assigned)
 5.	Select Location **East US**
-6.	Leave Log Analytics turned **Off**
+6.	Leave Log Analytics and Associate with integration service enviornment turned  **Off**
 7.	Click **Review + Create**
 8.	On the next screen, click **Create.**
 9.	Wait for the Logic App to deploy.
@@ -237,14 +259,12 @@ In this playbook we will be adding a user into a group based on a Incidents.  Th
 
 40.	Click New Step, search for Azure Sentinel and select **Add comment to incident (V3)**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/commentv3.PNG
-)<br><br>
-
 
 41.	Click Incident **ARM id and select Incident ARM ID** from the flyout
 42. Click on the Incident comment field and type **"User was blocked with Conditional Access by Logic App"**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/play01.PNG
+
+![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/commentv3.PNG
 )<br><br>
 
 43.	Click **Save**
