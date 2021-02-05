@@ -36,23 +36,21 @@ Password: **Ask the trainer**
 ![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB01/screenshots/workspace.PNG
 )<br><br>
 
-6.	Within the navigation bar, click **Analytics**
+6.	Within the navigation bar, click **Hunting**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/analytics.png
+![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/hunt.png
 )<br><br>
 
-## Task 3: Create Analytics Rule for Failed Logon
-1. Click **Create** and choose **Scheduled query rule** from the flyout menu<br>
+>
+## Task 3: Create Hunting Rule for Failed Logon and add to Livestream<br>
 
-**Bonus Tip** - Notice for the other rule types that Azure sentinel support<br>
 
-2. In the Name box **type standardXX – Failed Logon** (where “XX” is the number you have been assigned at the start of class)<br>
+1. Click **+ New Query**<br>
+
+
+2. In the Name box type **standardXX – Failed Logon** (where “XX” is the number you have been assigned at the start of class)<br>
 3.	Leave the **Description** box blank
-4.	For Tactics, Choose **Initial Access**
-5.	Select Alert Severity **Medium**
-6.	Set Status to Enabled
-7.	Click **Next: Set rule logic**
-8.	In **Rule query** copy the following query: 
+4.	In **Custom Query** copy the following query: 
 
 ## Important!!!! **(INSIDE THE QUERY substitute “XX” with your assigned number)**
 
@@ -67,24 +65,30 @@ SigninLogs
 | sort by TimeGenerated desc
 ```
 
-9. Under Entity Mapping, map the following entities
+5. Under Entity Mapping, map the following entities
 
 * Account -> UserprincipalName (Click **Add**)
 * IP address -> IPAddress (Click **Add**)
-10. Set the Query scheduling to:<br>
-o	Run query every: **5 minutes**<br>
-o	Lookup data from the last: **30 minutes**
 
+6. At the bottom, click **Create**
+7. In Queries, search for the queryyou have just saved. **standardXX – Failed Logon** (where “XX” is the number you have been assigned at the start of class)<br>
+8. Select the **Run Query** button in the bottom right of the screen and confirm if we have results returned.
+9. Select the Ellipsis button as the end of the query and select **Add to livestream**
+10. 
+![alt text]
+11. 
+![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/examplequery.png
+)<br><br>
 
-11. Set the Alert Threshold to ‘Generate alert when number of query results’ to **Is greater than** and the threshold to **0**
-12. “Under Event grouping, leave it as **"Group all events into a single alert"**
-13. Under Suppression, Set Stop running query after alert is generated after alert is generated to **On** and Stop running query for: **30 minutes**
-14. At the bottom, click Next: **Incident settings**.
+10. Set the Alert Threshold to ‘Generate alert when number of query results’ to **Is greater than** and the threshold to **0**
+11. “Under Event grouping, leave it as **"Group all events into a single alert"**
+12. Under Suppression, Set Stop running query after alert is generated after alert is generated to **On** and Stop running query for: **30 minutes**
+13. At the bottom, click Next: **Incident settings**.
 
-15. On Create incidents from alerts triggered by this analytics rule, set to **Enabled**.
-16. Under Group related alert, triggered by this analytics rule, into incidents, set to **Enabled**.
-17. Set Limit the group to alerts created within the selected time frame to **24 Hours**.
-18. Under Group alerts triggered by this analytics rule into a single incident by, select the radio button for **Grouping alerts into a single incident if the selected entities match** and from the drop-down menu, select **Account.**
+14. On Create incidents from alerts triggered by this analytics rule, set to **Enabled**.
+15. Under Group related alert, triggered by this analytics rule, into incidents, set to **Enabled**.
+16. Set Limit the group to alerts created within the selected time frame to **24 Hours**.
+17. Under Group alerts triggered by this analytics rule into a single incident by, select the radio button for **Grouping alerts into a single incident if the selected entities match** and from the drop-down menu, select **Account.**
 
 ![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/Incidentsettings.png
 )<br><br>

@@ -50,6 +50,7 @@ In this Task, we will run several single queries to hunt for indicators of compr
 
 **Step 2:** Run the Hosts with new logons Query and Examine the Output<br>
 1.	Click on the query Hosts with new logons.
+(Please note if Hunting Query is not available please ask instructor to create from  Hunting Queries/SecurityEvent/HostsWithNewLogons.yaml)
 2.	This brings up information about this Hunting query on the right side of the screen
 
 ![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB04/screenshots/hunt08.PNG
