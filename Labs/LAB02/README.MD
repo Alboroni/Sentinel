@@ -188,6 +188,21 @@ o	Host -> ImpactedGroup (Click **Add**)<br>
 
 ![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/invest22.png
 )<br><br>
+## Task 6 Review Entities within the Incident
+In this section we will review the insights available when enabling User and Entity Behavior Analytics (UEBA).<br>
+
+1. Navigate back to **Incidents**
+2. Locate your incident standard**XX** – Failed Logon (where “XX” is the number you have been assigned at the start of class)
+3. 	Click your Incident. Then Click the **view full details** button on the lower right-hand side
+4. Under the details for the incident and Entities section on the right hand side click on your standard**XX** user entity
+![alt test](/Labs/LAB02/screenshots/ueba1.png)
+
+5. Review all the details we can see regarding your user Entity. The details will change depending in activity within the environment and other activities
+6. Review the **Insights** on right hand side to see if we have any anamolous activity for the standard user and when this occurred. 
+
+![alt text](/Labs/LAB02/screenshots/anamlousact.png)
+
+7. Review the other area of the the Insight section inclduing the UEBA Insights
 
 ## Task 6: Create a playbook to respond to your Incidents
 In this playbook we will be adding a user into a group based on a Incidents.  This group is already linked to a conditional access policy which will block user logons to all cloud applications.
