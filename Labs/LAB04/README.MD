@@ -45,12 +45,11 @@ In this Task, we will run several single queries to hunt for indicators of compr
 7.	Right away we might notice some suspicious activity. For purposes of our lab, let’s focus on the highlighted process above and the ones like it. These are processes we do not normally recognize – and they may very well be nefarious. Certainly, we need to investigate further.
 8.	Note that we have identified a protentially dangerous process that otherwise would have gone unnoticed in the environment. This can be an early indicator of compromise – and early detection is key to being able to create a meaningful response.
 9.	Click on **Azure Sentinel – Hunting** at the top to return to he Hunting section.
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB04/screenshots/hunt07.PNG
-)<br><br>
+![alt text](/Labs/LAB04/screenshots/hunt6a.png)<br><br>
 
 **Step 2:** Run the Hosts with new logons Query and Examine the Output<br>
 1.	Click on the query Hosts with new logons.
-(Please note if Hunting Query is not available please ask instructor to create from  Hunting Queries/SecurityEvent/HostsWithNewLogons.yaml)
+
 2.	This brings up information about this Hunting query on the right side of the screen
 
 ![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB04/screenshots/hunt08.PNG
@@ -102,8 +101,7 @@ SecurityEvent
 
 6.	At the top of the page, click **Azure Sentinel – Hunting** to return to the Hunting pane.
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB04/screenshots/hunt14.PNG
-)<br><br>
+![alt text](/labs/LAB04/screenshots/hunt6a.png)<br><br>
 
 **Task 4: Craft and Execute a Unique Hunting Query to Investigate a Distinct Security Concern**<br>
 
