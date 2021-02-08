@@ -43,7 +43,7 @@ Password: **Ask the trainer**
 
 >
 ## Task 3: Create Hunting Rule for Failed Logon and add to Livestream<br>
-In this task we create a new hunting rule, add this to the live stream results to review failed logons occuring live. 
+In this task we create a new hunting rule, add this to the live stream results to review failed logons occuring in real time. 
 
 
 1. Click **+ New Query**<br>
@@ -78,7 +78,7 @@ SigninLogs
 ![alt text](/Labs/LAB02/screenshots/addlivetream.png?raw=true")<br>
 
 
-10. In the Livestream tab search for your query (**standardXX – Failed Logon** (where “XX” is the number you have been assigned at the start of class) and confirm your query in running and select  **open livestream** in the bottom right corner
+10. In the Livestream tab search for your query **standardXX – Failed Logon** (where “XX” is the number you have been assigned at the start of class) and confirm your query in running and select  **open livestream** in the bottom right corner
 11. In the window confirm the Livestream is still running and leave browser open 
 12. In a new browser navigate back to https://myapps.microsoft.com
 12.	When logging on as **standardxx@sentinellab.xyz** type in an **incorrect password**
@@ -91,7 +91,7 @@ SigninLogs
 
 ![alt text](/Labs/LAB02/screenshots/livestreamanalytics.png?raw=true!)<br>
 
-2. Leave the name as it was created and Description as blank
+2. Leave the Name as it was created and Description as blank
 3. In Tactics select **Initial Access**
 4. Set the Severity as **Medium** and Status to **Enabled**
 5. Click **Next:Set Rule logic**
@@ -202,7 +202,7 @@ In this section we will review the insights available when enabling User and Ent
 
 ![alt text](/Labs/LAB02/screenshots/anamlousact.png)
 
-7. Review the other area of the the Insight section inclduing the UEBA Insights
+7. Review the other area of the the Insight section including the **UEBA Insights**
 
 ## Task 6: Create a playbook to respond to your Incidents
 In this playbook we will be adding a user into a group based on a Incidents.  This group is already linked to a conditional access policy which will block user logons to all cloud applications.

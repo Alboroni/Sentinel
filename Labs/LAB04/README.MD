@@ -15,9 +15,9 @@ As in Task 1, we will be proactively hunting for Indicators of Attack in Sentine
 )<br><br>
 
 4.	By running all the built-in queries, you have a quick indicator of specific areas of concern. These may form a ready-made map of where your time should be spent hunting in any given point in time.
-5.	Click **Run all queries.**
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB04/screenshots/hunt03.PNG
-)<br><br>
+5.	Click **Run displayed queries.**
+![alt text](Lab/LAb04/../../screenshots/rundiisplayquery.png)
+<br><br>
 
 6.	Look at the Results column. Note that several of these queries have returned results. These require further investigation. You will want to help your customers pay special investigative attention to the results of queries like **New processes observed in last 24 hours**, and **uncommon processes – bottom 5%**. These can be indicators of compromise that are often missed.
 
@@ -26,7 +26,7 @@ As in Task 1, we will be proactively hunting for Indicators of Attack in Sentine
 In this Task, we will run several single queries to hunt for indicators of compromise.<br>
 
 **Step 1:** Run the New processes observed Query and Examine the Output<br>
-1.	Click on the query **New processes observed in the last 24 hours**.
+1.	Search for the Query  **New processes observed in the last 24 hours** and click on it.
 2.	This brings up information about this Hunting query on the right side of the screen.
 
 ![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB04/screenshots/hunt04.PNG
@@ -48,7 +48,7 @@ In this Task, we will run several single queries to hunt for indicators of compr
 ![alt text](/Labs/LAB04/screenshots/hunt6a.png)<br><br>
 
 **Step 2:** Run the Hosts with new logons Query and Examine the Output<br>
-1.	Click on the query Hosts with new logons.
+1.	Search for and click on the query **Hosts with new logons.**
 
 2.	This brings up information about this Hunting query on the right side of the screen
 
@@ -131,12 +131,12 @@ In this example, my user name is User43.<br>
 3.	Leave the **Entity mapping** fields blank.<br>
 4.	Add the Tactics that you think best match the attacker tactics you are hunting for. For example, **Initial Access, Privilege Escalation and Credential Access** are all risks of using Legacy Protocols.<br>
 5.	Click **Create.**<br>
-6.	On the main Hunting page, examine your new query.<br>
+6.	On the main Hunting page, examine your new query. (If not displayed use the search)<br>
 
 ![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB04/screenshots/hunt17.PNG
 )<br><br>
 
-7.	Click **Run all queries** to include your new query in the overall Hunting experience.
+7.	Click **Run displayed queries** to include your new query in the overall Hunting experience.
 8.	Note: If you receive an exclamation point for the result, do not worry. This is an intermittent known issue and should be ignored for now.
 
 ![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB04/screenshots/hunt18.PNG
