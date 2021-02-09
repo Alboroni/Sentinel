@@ -1,4 +1,4 @@
-## Exercise 5: Using threat intelligence. <br>
+## Exercise 5: Using Threat Intelligence. <br>
 In this lab we will manually import threat indicators into Sentinel which can be used to highlight potential threats or attacks into your environment. <br>
 
 **Task 1:** Manually Create a Threat indicator <br>
