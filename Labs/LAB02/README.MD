@@ -28,17 +28,17 @@ Password: **Ask the trainer**
 3.	This brings you to the Azure Home. In the box at the top, search for **Sentinel**.
 4.	In the results, click on **Azure Sentinel**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB01/screenshots/portal2.PNG
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB01/screenshots/portal2.PNG
 )<br><br>
 
 5.	Click **briandel**, which is the name of the Sentinel Workspace.
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB01/screenshots/workspace.PNG
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB01/screenshots/workspace.PNG
 )<br><br>
 
 6.	Within the navigation bar, click **Hunting**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/hunt.png
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/hunt.png
 )<br><br>
 
 >
@@ -108,7 +108,7 @@ SigninLogs
 14. Set Limit the group to alerts created within the selected time frame to **24 Hours**.
 15. Under Group alerts triggered by this analytics rule into a single incident by, select the radio button for **Grouping alerts into a single incident if the selected entities match** and from the drop-down menu, select **Account.**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/Incidentsettings.png
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/Incidentsettings.png
 )<br><br>
 
 18.	Set Re-open closed matching incidents to **Enabled**.
@@ -122,7 +122,7 @@ SigninLogs
 
 1. Navigate back to the main Sentinel home screen and in the navigation bar select **Analytics** 
    
-![alttext](/Labs/LAB02/screenshots/analytics.png?raw=true")<br><br>
+![alttext](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/analytics.png?)<br><br>
 
 2.	Click **Create** and choose **Scheduled query rule** from the flyout menu (note the different options available)<br>
 3.In the Name box **type AdminXX – Admin Group Change** (where “XX” is the number you have been assigned at the start of class)
@@ -158,7 +158,7 @@ o	Host -> ImpactedGroup (Click **Add**)<br>
 17.	Set Limit the group to alerts created within the selected time frame to **24 Hours.**
 18.	Under Group alerts triggered by this analytics rule into a single incident by, select the radio button for **Grouping alerts into a single incident if the selected entities match** and from the drop-down menu, select **Account.**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/Incidentsettings.png
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/Incidentsettings.png
 )<br><br>
 
 18.	Set Re-open closed matching incidents to **Enabled.**
@@ -176,7 +176,7 @@ o	Host -> ImpactedGroup (Click **Add**)<br>
 **Note**: Data will vary based on the other events occurring in the lab. The IP address will likely be different and the number of related alerts will depend on other users in the lab. This is how Investigation within Sentinel is intended to function.
 
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/invest11.PNG
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/invest11.PNG
 )<br><br>
 
 5.	You may explore other available options in the investigation graph. However, depending upon the data available at the time, some options in the graph will be grayed out.
@@ -186,7 +186,7 @@ o	Host -> ImpactedGroup (Click **Add**)<br>
 9.	Hover over the User account victim4 and click **Related alerts** to see additional alerts related to this Admin group change involving this account.
 
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/invest22.png
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/invest22.png
 )<br><br>
 ## Task 6 Review Entities within the Incident
 In this section we will review the insights available when enabling User and Entity Behavior Analytics (UEBA).<br>
@@ -224,12 +224,12 @@ In this playbook we will be adding a user into a group based on a Incidents.  Th
 15.	Search for **Sentinel** and click on the **Azure Sentinel** icon
 16.	Click **Entities – Get accounts (preview)**.
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/play01.PNG
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/play01.PNG
 )<br><br>
 
 17.	Click the text box **Entities List** and from the layout, select **Entities**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/entat01.PNG
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/entat01.PNG
 )<br><br>
 
 18.	Click **New Step** and search for and select **Control.**
@@ -243,13 +243,13 @@ In this playbook we will be adding a user into a group based on a Incidents.  Th
 26.	Staying within the flyout, click **Expression.**
 27.	In the **fx** box type **string('@')** and click **Ok**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/logic_Expression.png
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/logic_Expression.png
 )<br><br>
 
 28.	Staying within the flyout, click **Accounts UPN Suffix**
 29.	Next, click **Add an action**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/logic_Expression2.png
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/logic_Expression2.png
 )<br><br>
 
 30.	Search for and click on Azure AD
@@ -257,7 +257,7 @@ In this playbook we will be adding a user into a group based on a Incidents.  Th
 32.	Under Group ID, enter **4aa42844-7b1a-410f-b4eb-aacdc3e98b92**
 33.	Under User ID, select **Id** from the flyout
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/logicapp_id.png
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/logicapp_id.png
 )<br><br>
 
 34.	At the bottom of the page, click **New Step**
@@ -269,7 +269,7 @@ In this playbook we will be adding a user into a group based on a Incidents.  Th
 
 
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/logicapp1.png
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/logicapp1.png
 )<br><br>
 
 40.	Click New Step, search for Azure Sentinel and select **Add comment to incident (V3)**
@@ -279,7 +279,7 @@ In this playbook we will be adding a user into a group based on a Incidents.  Th
 42. Click on the Incident comment field and type **"User was blocked with Conditional Access by Logic App"**
 
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/commentv3.PNG
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/commentv3.PNG
 )<br><br>
 
 43.	Click **Save**
@@ -290,7 +290,7 @@ In this playbook we will be adding a user into a group based on a Incidents.  Th
 3.	Click **View full details**
 4.	Under the Incident, click **View playbooks**
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/viewplay.PNG
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/viewplay.PNG
 )<br><br>
 
 5.	From the list of Playbooks locate **standardXX-Block-With-Conditional-Access-Policy** and click **Run**
@@ -303,7 +303,7 @@ Username: **standardXX@sentinellab.xyz** (where “XX” is the number you have 
 Password: **Ask the trainer**
 9.	You will now see that access to the my apps portal has been blocked due to conditional access
 
-![alt text](https://raw.githubusercontent.com/Yaniv-Shasha/Sentinel/master/Labs/LAB02/screenshots/myapp.PNG
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/myapp.PNG
 )<br><br>
 
 ## Task 8: (Optional) Review Additional Logic Apps in Azure Sentinel GitHub
@@ -311,4 +311,4 @@ Password: **Ask the trainer**
 Navigate to Azure Sentinel official GitHub Repository into the playbook section https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks <br> review the list of playbooks and the deployment options. 
 
 ### Continue with the next lab
-LAB 03 - Proactively Investigate Potential Threats, Misconfigurations, and Suspicious Activities Visually, click <a href="https://github.com/Yaniv-Shasha/Sentinel/tree/master/Labs/LAB03" target="_blank">here</a>
+LAB 03 - Proactively Investigate Potential Threats, Misconfigurations, and Suspicious Activities Visually, click <a href="https://github.com/alboroni/Sentinel/tree/master/Labs/LAB03" target="_blank">here</a>
