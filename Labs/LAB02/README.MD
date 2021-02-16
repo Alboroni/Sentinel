@@ -38,10 +38,10 @@ Password: **Ask the trainer**
 
 6.	Within the navigation bar, click **Hunting**
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/hunt.png
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/hunt.PNG
 )<br><br>
 
->
+
 ## Task 3: Create Hunting Rule for Failed Logon and add to Livestream<br>
 In this task we create a new hunting rule, add this to the live stream results to review failed logons occuring in real time. 
 
@@ -143,27 +143,27 @@ SecurityEvent
 | project ChangeType, ImpactedGroup=TargetUserName, ImpactedAccount=MemberName, ChangeMaker=Account, DC=Computer
 ```
 
-8.	Under Entity Mapping, map the following entities<br>
+9.	Under Entity Mapping, map the following entities<br>
 o	Account -> ImpactedAccount (Click **Add**)<br>
 o	Host -> ImpactedGroup (Click **Add**)<br>
 
-9.	Set the Run query every to **30 minutes**
-10.	Set the Lookup data from the last to **1 hour**
-11.	Set the Alert Threshold to Generate alert when number of query results to **Is greater than** and the threshold to **0**
-1.  Under Event grouping, leave it as **“Group all events into a single alert"**
-13.	Set Stop running query after alert is generated to **On** and Stop running query for: **8 hours**
-14.	At the bottom, click **Next: Incident settings.**
-15.	On Create incidents from alerts triggered by this analytics rule, set to **Enabled.**
-16.	Under Group related alert, triggered by this analytics rule, into incidents, set to **Enabled.**
-17.	Set Limit the group to alerts created within the selected time frame to **24 Hours.**
-18.	Under Group alerts triggered by this analytics rule into a single incident by, select the radio button for **Grouping alerts into a single incident if the selected entities match** and from the drop-down menu, select **Account.**
+10.	Set the Run query every to **30 minutes**
+11.	Set the Lookup data from the last to **1 hour**
+12.	Set the Alert Threshold to Generate alert when number of query results to **Is greater than** and the threshold to **0**
+13.  Under Event grouping, leave it as **“Group all events into a single alert"**
+14.	Set Stop running query after alert is generated to **On** and Stop running query for: **8 hours**
+15.	At the bottom, click **Next: Incident settings.**
+16.	On Create incidents from alerts triggered by this analytics rule, set to **Enabled.**
+17.	Under Group related alert, triggered by this analytics rule, into incidents, set to **Enabled.**
+18.	Set Limit the group to alerts created within the selected time frame to **24 Hours.**
+19.	Under Group alerts triggered by this analytics rule into a single incident by, select the radio button for **Grouping alerts into a single incident if the selected entities match** and from the drop-down menu, select **Account.**
 
 ![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/Incidentsettings.png)<br><br>
 
-18.	Set Re-open closed matching incidents to **Enabled.**
-19.	At the bottom, click **Next: Automated response.**
-20.	Leave the following page unchanged and click **Next: Review**
-21.	Click **Create**
+20.	Set Re-open closed matching incidents to **Enabled.**
+21.	At the bottom, click **Next: Automated response.**
+22.	Leave the following page unchanged and click **Next: Review**
+23.	Click **Create**
 
 
 
