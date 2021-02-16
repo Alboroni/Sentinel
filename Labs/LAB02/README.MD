@@ -158,8 +158,7 @@ o	Host -> ImpactedGroup (Click **Add**)<br>
 17.	Set Limit the group to alerts created within the selected time frame to **24 Hours.**
 18.	Under Group alerts triggered by this analytics rule into a single incident by, select the radio button for **Grouping alerts into a single incident if the selected entities match** and from the drop-down menu, select **Account.**
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/Incidentsettings.png
-)<br><br>
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/Incidentsettings.png)<br><br>
 
 18.	Set Re-open closed matching incidents to **Enabled.**
 19.	At the bottom, click **Next: Automated response.**
@@ -176,8 +175,7 @@ o	Host -> ImpactedGroup (Click **Add**)<br>
 **Note**: Data will vary based on the other events occurring in the lab. The IP address will likely be different and the number of related alerts will depend on other users in the lab. This is how Investigation within Sentinel is intended to function.
 
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/invest11.PNG
-)<br><br>
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/invest11.PNG)<br><br>
 
 5.	You may explore other available options in the investigation graph. However, depending upon the data available at the time, some options in the graph will be grayed out.
 6.	Navigate back to Azure Sentinel -> Incidents and locate your incident **AdminXX – Admin Group Change**
