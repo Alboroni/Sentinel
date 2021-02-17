@@ -16,7 +16,7 @@ As in Task 1, we will be proactively hunting for Indicators of Attack in Sentine
 
 4.	By running all the built-in queries, you have a quick indicator of specific areas of concern. These may form a ready-made map of where your time should be spent hunting in any given point in time.
 5.	Click **Run displayed queries.**
-![alt text](Lab/LAb04/../../screenshots/rundiisplayquery.png)
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB04/screenshots/rundiisplayquery.png)
 <br><br>
 
 6.	Look at the Results column. Note that several of these queries have returned results. These require further investigation. You will want to help your customers pay special investigative attention to the results of queries like **New processes observed in last 24 hours**, and **uncommon processes – bottom 5%**. These can be indicators of compromise that are often missed.
@@ -32,7 +32,7 @@ In this Task, we will run several single queries to hunt for indicators of compr
 ![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB04/screenshots/hunt04.PNG
 )<br><br>
 
-3.	**Optional:** for background information, you may click on read more on mitre.com. This is an excellent knowledge base of adversary tactics and techniques that have been documented in the wild.
+3.	**Optional:** for background information, you may click on read more on https://attack.mitre.org This is an excellent knowledge base of adversary tactics and techniques that have been documented in the wild.
 4.	Click **Run Query** and then click **View Results**. This launches the Logs page, pre-populates the KQL query, and displays the results.
 ![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB04/screenshots/hunt05.PNG
 )<br><br>
@@ -45,7 +45,7 @@ In this Task, we will run several single queries to hunt for indicators of compr
 7.	Right away we might notice some suspicious activity. For purposes of our lab, let’s focus on the highlighted process above and the ones like it. These are processes we do not normally recognize – and they may very well be nefarious. Certainly, we need to investigate further.
 8.	Note that we have identified a protentially dangerous process that otherwise would have gone unnoticed in the environment. This can be an early indicator of compromise – and early detection is key to being able to create a meaningful response.
 9.	Click on **Azure Sentinel – Hunting** at the top to return to he Hunting section.
-![alt text](/Labs/LAB04/screenshots/hunt6a.png)<br><br>
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB04/screenshots/hunt6a.png)<br><br>
 
 **Step 2:** Run the Hosts with new logons Query and Examine the Output<br>
 1.	Search for and click on the query **Hosts with new logons.**
@@ -101,7 +101,7 @@ SecurityEvent
 
 6.	At the top of the page, click **Azure Sentinel – Hunting** to return to the Hunting pane.
 
-![alt text](/labs/LAB04/screenshots/hunt6a.png)<br><br>
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB04/screenshots/hunt6a.png)<br><br>
 
 **Task 4: Craft and Execute a Unique Hunting Query to Investigate a Distinct Security Concern**<br>
 
