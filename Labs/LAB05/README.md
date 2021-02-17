@@ -2,7 +2,7 @@
 In this lab we will manually import threat indicators into Sentinel which can be used to highlight potential threats or attacks into your environment. <br>
 
 **Task 1:** Manually Create a Threat indicator <br>
-In this task we will manualy add a threat indicator to the threat intelligence. You can also import threat intelligence and indicators from other external soruces using data connectors.
+In this task we will manualy add a threat indicator to  threat intelligence. You can also import threat intelligence and indicators from other external sources using data connectors.
 
 1. Navigate to Sentinel and Select Threat Intelligence in the Taskbar
 
@@ -10,7 +10,7 @@ In this task we will manualy add a threat indicator to the threat intelligence. 
 <br>
 
   
-2. Review how many Threat Indicators are currently imported. (Note we have many different sources for threat indicator that have been imported into this Sentinel workspace)
+2. Review how many Threat Indicators are currently imported. (Note we have many different sources of threat indicators that have been imported into this Sentinel workspace)
 
 4. We are going to add our current public IP address as a threat for the purposes of the Lab. Please open a browser and use a site such as . http://whatismyip.host/ to find your IPv4 public address. 
 5. In Threat Intelligence click add new 
@@ -32,7 +32,7 @@ In this task we will manualy add a threat indicator to the threat intelligence. 
 
 
  ![alt text](../Labs05/../LAB05/screenshots/threatworkbook.png) <br>
-2. Review the various parts of the workbook. Notewhen TIs have been imported, what types of indicator we have and also the Aert counts we see associated with the TIs <br>
+2. Review the various parts of the workbook. Note when TIs have been imported, what types of indicator we have and also the Alert counts we see associated with the TIs <br>
    
 3. We might also see some alerts associated with IP addresses indicator in the **Alert counts by indicator" section now. These will be picking up alerts created by particpants in previous labs. <br>
 
