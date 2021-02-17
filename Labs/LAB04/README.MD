@@ -157,3 +157,5 @@ In this example, my user name is User43.<br>
 ![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB04/screenshots/hunt21.PNG
 )<br><br>
 
+### Continue with the next lab
+LAB 05 -Exercise 5: Using Threat Intelligence, click <a href="https://github.com/Alboroni/Sentinel/blob/master/Labs/LAB05/README.md" target="_blank">here</a>
