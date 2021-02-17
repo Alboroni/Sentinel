@@ -68,12 +68,13 @@ SigninLogs
 1. Under Entity Mapping, map the following entities
 
    * Account -> UserprincipalName (Click **Add**)
-   * IP address -> IPAddress (Click **Add**)
+   * IP -> IPAddress (Click **Add**)
 
-6. At the bottom, click **Create**
-7. In Queries, search for the query you have just saved. **standardXX – Failed Logon** (where “XX” is the number you have been assigned at the start of class)<br>
-8. Select the **Run Query** button in the bottom right of the screen and confirm if we have results returned.
-9. Select the ellipsis button as the end of the query and select **Add to livestream**
+2. At the bottom, click **Create** 
+3. In Queries, search for the query you have just saved. **standardXX – Failed Logon** (where “XX” is the number you have been assigned at the start of class)<br>
+4. Select the **Run Query** button in the bottom right of the screen and confirm if we have results returned.  <br>
+   **Note due to a known issue we can see error on result, please wait for a period of time and try to run query again**
+5. Select the ellipsis button as the end of the query and select **Add to livestream**
 
 ![alt text](/Labs/LAB02/screenshots/addlivetream.png?raw=true")<br>
 
@@ -151,7 +152,7 @@ o	Host -> ImpactedGroup (Click **Add**)<br>
 11.	Set the Lookup data from the last to **1 hour**
 12.	Set the Alert Threshold to Generate alert when number of query results to **Is greater than** and the threshold to **0**
 13.  Under Event grouping, leave it as **“Group all events into a single alert"**
-14.	Set Stop running query after alert is generated to **On** and Stop running query for: **8 hours**
+14.	Under Suppression, Set Stop running query after alert is generated to **On** and Stop running query for: **8 hours**
 15.	At the bottom, click **Next: Incident settings.**
 16.	On Create incidents from alerts triggered by this analytics rule, set to **Enabled.**
 17.	Under Group related alert, triggered by this analytics rule, into incidents, set to **Enabled.**
@@ -186,7 +187,7 @@ o	Host -> ImpactedGroup (Click **Add**)<br>
 
 ![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/invest22.png
 )<br><br>
-## Task 6 Review Entities within the Incident
+## Task 7 Review Entities within the Incident
 In this section we will review the insights available when enabling User and Entity Behavior Analytics (UEBA).<br>
 
 1. Navigate back to **Incidents**
@@ -202,7 +203,7 @@ In this section we will review the insights available when enabling User and Ent
 
 7. Review the other area of the the Insight section including the **UEBA Insights**
 
-## Task 7: Create a playbook to respond to your Incidents
+## Task 8: Create a playbook to respond to your Incidents
 In this playbook we will be adding a user into a group based on a Incidents.  This group is already linked to a conditional access policy which will block user logons to all cloud applications.
 
 1.	In the Azure Portal, search for **Logic Apps** in the Search Bar at the top.
@@ -282,7 +283,7 @@ In this playbook we will be adding a user into a group based on a Incidents.  Th
 
 43.	Click **Save**
 
-## Task 8: Use your new playbook to respond to a Incidents
+## Task 9: Use your new playbook to respond to a Incidents
 1.	Navigate back to **Sentinel -> Incidents** in the Azure Portal
 2.	Click on your incident standard**XX** – Failed Logon
 3.	Click **View full details**
@@ -304,7 +305,7 @@ Password: **Ask the trainer**
 ![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/myapp.PNG
 )<br><br>
 
-## Task 9: (Optional) Review Additional Logic Apps in Azure Sentinel GitHub
+## Task 10: (Optional) Review Additional Logic Apps in Azure Sentinel GitHub
 
 Navigate to Azure Sentinel official GitHub Repository into the playbook section https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks <br> review the list of playbooks and the deployment options. 
 
