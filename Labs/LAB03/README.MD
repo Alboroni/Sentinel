@@ -97,7 +97,7 @@ In this task, you will learn to proactively investigate using Sentinel Dashboard
 5. The **Insecure Protocols** workspace visually represents Security log data from on-premise or IaaS Active Directory Domain Controllers as well as Legacy Authentications taking place against Azure AD. Specifically, it represents data detailing which insecure protocols are currently in use and their data flows throughout the estate.
 
 
-6. In the upper left-hand corner, set the TimeRange to last 90 days:
+6. In the upper left-hand corner, set the TimeRange to last 90 days and ensure workspace is set to **briandel**
 
 ![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB03/screenshots/timerange.png)<br>
 
@@ -116,23 +116,19 @@ In this task, you will learn to proactively investigate using Sentinel Dashboard
 ![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB03/screenshots/unsignedLDAP.png
 )<br><br>
 
-**Step 3**: Understand and Manipulate the Insecure Protocol Queries Behind the Workbook<br>
-1.	On the **Insecure Protocols** workbook, scroll down to **Insecure LDAP**. This was one of the most active Insecure Protocol in the estate, so it makes sense to examine it closely.
-2.	In the LDAP tab, note that by clicking on an account on the left, you can view more details.
 
-**Step 4**: Delve deeper in the Data Represented in the Workbook
+4.	In the LDAP tab, note that by clicking on an account on the left, you can view more details.
+
+**Step 3**: Delve deeper in the Data Represented in the Workbook
 
 1.	Sometimes we will need to assist our customers in delving deeper into a particular data set or sets. In order to do that, we will often want to drill down closer to the actual data collected by Sentinel (Log Analytics on the back end). 
-2.	Click on the **Azure Sentinel - Workbooks** at the top of the page
+2.	Click on the **Azure Sentinel** at the top of the page
 
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB03/screenshots/workbook_bar.png
-)<br><br>
 
 3.	Click on **Logs**
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB03/screenshots/worbook_logs.png
-)<br><br>
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB03/screenshots/workbooklog.PNG)<br><br>
 
 4.	Let’s delve deeper into Unsigned LDAP Traffic using a query that is doing some extractions as well as RegEx matching to put the data in an acceptable format. 
 5.	For example, maybe we need to know the Domain Controller being targeted by the Insecure LDAP binds. We can easily do that in the following steps.
