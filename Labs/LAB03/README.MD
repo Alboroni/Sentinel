@@ -128,7 +128,8 @@ In this task, you will learn to proactively investigate using Sentinel Dashboard
 
 3.	Click on **Logs**
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB03/screenshots/workbooklog.PNG)<br><br>
+![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB03/screenshots/workbooklog.PNG)
+<br><br>
 
 4.	Let’s delve deeper into Unsigned LDAP Traffic using a query that is doing some extractions as well as RegEx matching to put the data in an acceptable format. 
 5.	For example, maybe we need to know the Domain Controller being targeted by the Insecure LDAP binds. We can easily do that in the following steps.
