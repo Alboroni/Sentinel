@@ -167,7 +167,7 @@ o	Host -> ImpactedGroup (Click **Add**)<br>
 
 
 
-## Task 5: Review your Incidents
+## Task 6: Review your Incidents
 1.	Navigate back to **Incidents**
 2.	Locate your incident standard**XX** – Failed Logon (where “XX” is the number you have been assigned at the start of class)
 3.	Click your Incident. Then Click the **Investigate** button on the lower right-hand side
@@ -202,7 +202,7 @@ In this section we will review the insights available when enabling User and Ent
 
 7. Review the other area of the the Insight section including the **UEBA Insights**
 
-## Task 6: Create a playbook to respond to your Incidents
+## Task 7: Create a playbook to respond to your Incidents
 In this playbook we will be adding a user into a group based on a Incidents.  This group is already linked to a conditional access policy which will block user logons to all cloud applications.
 
 1.	In the Azure Portal, search for **Logic Apps** in the Search Bar at the top.
@@ -282,7 +282,7 @@ In this playbook we will be adding a user into a group based on a Incidents.  Th
 
 43.	Click **Save**
 
-## Task 7: Use your new playbook to respond to a Incidents
+## Task 8: Use your new playbook to respond to a Incidents
 1.	Navigate back to **Sentinel -> Incidents** in the Azure Portal
 2.	Click on your incident standard**XX** – Failed Logon
 3.	Click **View full details**
@@ -304,7 +304,7 @@ Password: **Ask the trainer**
 ![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB02/screenshots/myapp.PNG
 )<br><br>
 
-## Task 8: (Optional) Review Additional Logic Apps in Azure Sentinel GitHub
+## Task 9: (Optional) Review Additional Logic Apps in Azure Sentinel GitHub
 
 Navigate to Azure Sentinel official GitHub Repository into the playbook section https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks <br> review the list of playbooks and the deployment options. 
 
