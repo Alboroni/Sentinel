@@ -14,7 +14,4 @@ Before working on this lab, the following helps:<br>
 •	Familiarity with Azure Playbooks and automation<br>
 •	Awareness of Kusto Query Language (KQL)<br>
 
-The following lab is based on the Lab written by **Brian Delaney**, Principal PFE  **Jon Shectman**, Associate Architect and updated by **Yaniv Shasha** Program Manager. 
-
-Enjoy! <br>
-The Security CxE Team
+The following lab is based on the Lab written by **Brian Delaney**, Principal PFE  **Jon Shectman**, Associate Architect and Further updated by **Alex Young** senior  CE
