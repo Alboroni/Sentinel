@@ -6,7 +6,7 @@ In this task we will manualy add a threat indicator to  threat intelligence. You
 
 1. Navigate to Sentinel and Select Threat Intelligence in the Taskbar
 
-![alt text](../LAB05/screenshots/threattask.png)<br.>
+![alt text](screenshots/threattask.png)<br.>
 <br>
 
   
@@ -21,7 +21,7 @@ In this task we will manualy add a threat indicator to  threat intelligence. You
 10. Set confidence to **100*
 11. Select today's date in Valid from and set tomorrow's date for Valid until
 
-![alt text](../LAB05/screenshots/TIindicator.png) <br>
+![alt text](screenshots/TIindicator.png) <br>
 <br>
 
 12. Click **Apply**
@@ -31,7 +31,7 @@ In this task we will manualy add a threat indicator to  threat intelligence. You
 1. In the Threat intelligence section of Sentinel select the Threat intelligence workbook
 
 
- ![alt text](../Labs05/../LAB05/screenshots/threatworkbook.png) <br>
+ ![alt text](screenshots/threatworkbook.png) <br>
 2. Review the various parts of the workbook. Note when TIs have been imported, what types of indicator we have and also the Alert counts we see associated with the TIs <br>
    
 3. We might also see some alerts associated with IP addresses indicator in the **Alert counts by indicator" section now. These will be picking up alerts created by particpants in previous labs. <br>

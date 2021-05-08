@@ -74,4 +74,4 @@ Password: **Assigned by instructor**
 
 
 ### Continue with the next lab
-LAB 02 -Setup Alerts (Analytics) and Respond to Cases in Azure Sentinel, click <a href="../LAB02" target="_blank">here</a>
+LAB 02 -Setup Alerts (Analytics) and Respond to Cases in Azure Sentinel, click <a href="../LAB02/README.md" target="_blank">here</a>
