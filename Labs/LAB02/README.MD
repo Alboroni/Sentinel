@@ -1,10 +1,4 @@
-```
-## ```
-
-```
-```Exercise 2: View Livestream, Setup Alerts (Analytics) and Respond to Incident in Azure Sentinel
-
-```
+## Exercise 2: View Livestream, Setup Alerts (Analytics) and Respond to Incident in Azure Sentinel
 
 In this section we will view events occuring live and then configure Alerts in Azure Sentinel to generate Incidents for our security team.  During the review of these Incident we will build a Playbook to simplify the handling of these alerts.<br>
 
