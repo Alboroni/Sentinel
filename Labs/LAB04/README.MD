@@ -140,4 +140,4 @@ In this example, my user name is User43.<br>
 ![alt text](screenshots/hunt21.PNG)<br><br>
 
 ### Continue with the next lab
-LAB 05 -Exercise 5: Using Threat Intelligence, click <a href="../LAB05/README.md" target="_blank">here</a>
+LAB 05 -Exercise 5: Using Threat Intelligence, click <a href="../LAB05/README.MD" target="_blank">here</a>

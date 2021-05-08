@@ -290,4 +290,4 @@ Navigate to Azure Sentinel official GitHub Repository into the playbook section 
 
 ### Continue with the next lab
 
-LAB 03 - Proactively Investigate Potential Threats, Misconfigurations, and Suspicious Activities Visually, click <a href="../LAB03/README.md" target="_blank">here</a>
+LAB 03 - Proactively Investigate Potential Threats, Misconfigurations, and Suspicious Activities Visually, click <a href="../LAB03/README.MD" target="_blank">here</a>

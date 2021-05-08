@@ -145,4 +145,4 @@ In the output, Click one of the chevrons to the left side of the screen in order
 
 
 ### Continue with the next lab
-LAB 04 - Proactively Investigate Potential Threats, Misconfigurations, and Suspicious Activities with KQL Queries , click <a href="../LAB04/README.md" target="_blank">here</a>
+LAB 04 - Proactively Investigate Potential Threats, Misconfigurations, and Suspicious Activities with KQL Queries , click <a href="../LAB04/README.MD" target="_blank">here</a>
