@@ -14,4 +14,6 @@ Before working on this lab, the following helps:<br>
 •	Familiarity with Azure Playbooks and automation<br>
 •	Awareness of Kusto Query Language (KQL)<br>
 
-The following lab is based on the Lab written by **Brian Delaney**, Principal PFE  **Jon Shectman**, Associate Architect and Further updated by **Alex Young** Senior  CE
+The following lab is based on the Lab written by **Brian Delaney**, Principal PFE  **Jon Shectman**, Associate Architect and Further updated by **Alex Young** Senior CE and **Alistair Ross** CE
+
+Get Started - Lab01 - Lab01 Setup and Data Connectors, click <a href="/LAB01/README.md" target="_blank">here
