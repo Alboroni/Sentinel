@@ -17,4 +17,4 @@ Before working on this lab, the following helps:<br>
 The following lab is based on the Lab written by **Brian Delaney**, Principal PFE  **Jon Shectman**, Associate Architect and Further updated by **Alex Young** Senior CE and **Alistair Ross** CE
 
 ## Get Started 
-Lab01 - Setup and Data Connectors, click <a href="/LAB01/README.MD" target="_blank">here
+Lab01 - Setup and Data Connectors, click <a href="/Labs/LAB01/README.MD" target="_blank">here
