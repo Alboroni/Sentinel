@@ -48,36 +48,30 @@ Password: **Assigned by instructor**
 4.	In the results, click on **Azure Sentinel**.
 
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB01/screenshots/portal2_new.PNG
-)<br><br>
+![alt text](screenshots/portal2_new.PNG)<br><br>
 
 5.	Click **briandel**, which is the name of the Sentinel Workspace.
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB01/screenshots/workspace.PNG
-)<br><br>
+![alt text](screenshots/workspace.PNG)<br><br>
 
 6.	In the Navigation bar, select **Data Connectors**
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB01/screenshots/connectors.PNG
-)<br><br>
+![alt text](screenshots/connectors.PNG)<br><br>
 
 7.	Locate the data connectors **Azure Active Directory** and **Security Events** and confirm that the Last log received time is within the last 30 minutes.
 8.	Click the **Azure Active Directory** connector and Click **Open connector page**
 9.	Confirm the status of the connector as **Connected**
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB01/screenshots/AAD.PNG
-)<br><br>
+![alt text](screenshots/AAD.PNG)<br><br>
 
 10.	Confirm that there has been recent data received
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB01/screenshots/data_ingested.PNG
-)<br><br>
+![alt text](screenshots/data_ingested.PNG)<br><br>
 
 11. press **next steps** tab on the top of the page and discover sample quires, if you scroll down you will find  out-off-the-box analytics rules that can be enabled with this data source
 
-![alt text](https://raw.githubusercontent.com/alboroni/Sentinel/master/Labs/LAB01/screenshots/next_step.png
-)<br><br>
+![alt text](screenshots/next_step.png)<br><br>
 
 
 ### Continue with the next lab
-LAB 02 -Setup Alerts (Analytics) and Respond to Cases in Azure Sentinel, click <a href="https://github.com/alboroni/Sentinel/tree/master/Labs/LAB02" target="_blank">here</a>
+LAB 02 -Setup Alerts (Analytics) and Respond to Cases in Azure Sentinel, click <a href="../LAB02/README.MD" target="_blank">here</a>
