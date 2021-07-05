@@ -41,7 +41,7 @@ Password: **Ask the trainer**<br>
 
 ![alt text](screenshots/menu.PNG)<br><br>
 
-9.	This query is slightly more complex and will look something like this (the date and time fields will be different):
+9.	Click on Security Event. This query is slightly more complex and will look something like this (the date and time fields will be different):
 
 ![alt text](screenshots/securityevents1.PNG)<br><br>
 
